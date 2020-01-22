@@ -40,5 +40,18 @@ end
 
 # Part III
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  index = 0
+  canSumToN = false
+  if arr.length > 1
+    while index < arr.length
+      while index + 1 < arr.length
+        if arr[index] + arr[index + 1] == n
+            canSumToN = true
+        end
+        index += 1
+      end
+    index +=1
+    end
+  end
+  return canSumToN
 end
