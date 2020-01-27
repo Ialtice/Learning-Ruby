@@ -42,7 +42,7 @@ describe 'Ruby Hashes Part II' do
   end
 end
 
-describe 'Ruby Hashes Part III' do
+describe 'Ruby Hashes Part III', :disabled => true  do
 
   describe "hash_2_array" do
     it "should be defined" do
