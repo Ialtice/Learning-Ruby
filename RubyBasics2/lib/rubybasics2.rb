@@ -2,7 +2,8 @@
 
 # Part I
 def hello(name)
-  # YOUR CODE HERE
+  helloName  = 'Hello, ' + name
+  return helloName 
 end
 
 # Part II
