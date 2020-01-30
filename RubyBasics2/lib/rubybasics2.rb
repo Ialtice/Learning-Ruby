@@ -8,7 +8,18 @@ end
 
 # Part II
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  isConstant = true
+  if s.empty?
+    isConstant = false
+  else
+    case s[0].upcase
+    when 'A', 'E', 'I', 'O', 'U' 
+      isConstant = false
+    when '?', '<', '>',',', '?', '[', ']', '}', '{', '=', '-' , ')','(','*','&','^','%','$','#','`','~','{','}','\''
+      isConstant = false
+    end
+  end
+  return isConstant
 end
 
 # Part III
