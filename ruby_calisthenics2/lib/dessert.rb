@@ -13,15 +13,18 @@ class Dessert
   end
   def initialize(name, calories)
     @name=(name)
-    @calories=(calories
-    )
+    @calories=(calories)
   end
   
   def healthy?
-    # your code here
+    if self.calories < 200
+      true
+    else
+      false
+    end
   end
   def delicious?
-    # your code here
+    true
   end
 end
 
