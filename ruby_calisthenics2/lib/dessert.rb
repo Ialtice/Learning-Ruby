@@ -1,8 +1,22 @@
 class Dessert
-  # add code for setters and getters
-  def initialize(name, calories)
-    # your code here
+  def name=(inName)
+    @name = inName
   end
+  def calories=(inCalories)
+    @calories = inCalories
+  end
+  def name
+    @name
+  end
+  def calories
+    @calories
+  end
+  def initialize(name, calories)
+    @name=(name)
+    @calories=(calories
+    )
+  end
+  
   def healthy?
     # your code here
   end
