@@ -5,8 +5,11 @@ class BookInStock
     attr_reader :isbn,:price
     attr_writer :isbn, :price
     def initialize(isbn, price)
+        raise ArgumentError.new("No empty strings or 
+        prices equal to or below zero")if isbn == '' || price <= 0 
         @isbn = isbn
         @price = price
+        
     end
 # YOUR CODE HERE
 end
